@@ -65,6 +65,8 @@ public class CMGraphicsWImages extends JPanel implements ActionListener {
         if (!doneOnce) {
 
             try {
+
+                // change file paths for testing
                 cannImg = ImageIO.read(new File("/Users/echen20/IdeaProjects/BreadthDepthFirst/src/cannibal.jpg"));
                 cannImg = resize(cannImg, 75, 75);
 
