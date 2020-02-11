@@ -55,7 +55,7 @@ public class CMGraphics extends JPanel implements ActionListener {
 
     public void paintComponent(Graphics g) {
 
-        // solve game
+        // solve game (only does the first time through
         if (!doneOnce) {
             CannibalsAndMissionaries cm = new CannibalsAndMissionaries(0, 3);
             solution = new int[100][3];
@@ -79,6 +79,7 @@ public class CMGraphics extends JPanel implements ActionListener {
         float thickness = 4;
         g2.setStroke(new BasicStroke(thickness));
 
+        // river through the middle
         g.setColor(Color.BLUE);
         g.drawRect(275, 0, 50, 725);
         g.setColor(Color.BLACK);
@@ -119,9 +120,6 @@ public class CMGraphics extends JPanel implements ActionListener {
                 }
             }
         }
-
-
-
 
         // Move the correct people
         if (inMotion) {
