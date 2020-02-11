@@ -7,6 +7,7 @@ Project Files:
 CannibalsAndMissionaries - contains a completed C&M file solver with breadth and depth first search implementations. It also contains private class RiverNode
 RiverState - contains code for RiverState which holds the array for the problem as well as knowing how to find next moves
 CMGraphics - my graphics representation of the problem, with red representing cannibals and black representing missionaries, and blue as boat
+CMGraphicsWImages - same as CMGraphics just with images instead of colored blocks, run CMGraphics if pictures do not load
 
 
 Extra Files:
