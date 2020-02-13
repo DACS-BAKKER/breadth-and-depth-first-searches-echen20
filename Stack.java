@@ -61,6 +61,14 @@ public class Stack<Item> { //LIFO (Last-In First-Out) Data Structure
         }
     }
 
+    public Item peek() { // removes the top node and returns its value, given that it exists
+        if(!isEmpty()) {
+            return (Item) top.data;
+        } else {
+            return null;
+        }
+    }
+
     public int size() { // returns the number of nodes in the stack
         if (!isEmpty()) {
             int sizeCounter = 1;
